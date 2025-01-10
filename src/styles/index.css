@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Exo";
+  src: url("./font/Exo_2/Exo2-VariableFont_wght.ttf"),
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  font-family: "Exo";
+  --text-colour0: #000000;
+  --text-colour1: #3f3f3f;
+  --bg-colour0: #ffffff;
+  --bg-colour1: #ffffff;
+/*  
+  --text-colour0: #dfeef2;
+  --text-colour1: #e1dca4;
+  --text-colour1: #ffffff;
+  --bg-colour0: #0b0c19;
+  --bg-colour1: #726786;*/
+  
+  background-color: var(--bg-colour0);
+}
+
+#root {
+  padding: 16px 32px;
+  max-width: 786px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
