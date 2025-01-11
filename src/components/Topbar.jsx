@@ -13,19 +13,19 @@ const Topbar = () => {
       
       <ul className={compStyles.links}>
         <li>
-          <Link>
+          <Link to="/">
             Portfolio
           </Link>
         </li>
         
         <li>
-          <Link>
+          <Link to="blog">
             Blog
           </Link>
         </li>
 
         <li>
-          <Link>
+          <Link to="resume">
             Resume
           </Link>
         </li>
