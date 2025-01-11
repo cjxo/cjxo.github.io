@@ -23,6 +23,12 @@ const Topbar = () => {
             Blog
           </Link>
         </li>
+
+        <li>
+          <Link>
+            Resume
+          </Link>
+        </li>
       </ul>
     </header>
   );

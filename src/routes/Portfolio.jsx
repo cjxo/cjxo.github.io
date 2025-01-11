@@ -25,8 +25,8 @@ const Portfolio = () => {
       <section className={`${styles.category} ${styles.intro}`}>
         <h2 className={styles.title}>My name is Christian.</h2>
         <p>
-          I am a fullstack web developer, located in the Philippines, building web apps
-          with ReactJS and express. I am currently seeking for job oportunities.
+          I am a full-stack web developer based in the Philippines.
+          I build web apps with React and Express and am actively seeking for job oportunities.
         </p>
         
         <div className={styles.findMe}>
@@ -140,8 +140,29 @@ const Portfolio = () => {
               </li>
             </ul>
           </li>
-          
         </ul>
+      </section>
+      <section className={`${styles.category} ${styles.aboutMe}`}>
+        <h2 className={styles.title}>About Me</h2>
+        <p>
+          My interest in computer programming began when I was around 18 (or 19) years old.
+          The first language I learned was C++, guided by the resources on <MyLink href="https://www.learncpp.com/">LearnCPP</MyLink>.
+          Over time, I transitioned to C, attracted to its simplicity.
+        </p>
+
+        <br />
+
+        <p>
+          I learned web development through <MyLink href="https://www.theodinproject.com/">The Odin Project</MyLink>. I have read its entire curriculum, getting my feet
+          wet in full stack development; it took me around a year to finish, gaining experience in full-stack development,
+          exploring both front-end and back-end technologies.
+        </p>
+        
+        <br />
+
+        <p>
+          Currently, I'm looking for opportunities to grow as a developer and contribute to projects.
+        </p>
       </section>
     </section>
   );
