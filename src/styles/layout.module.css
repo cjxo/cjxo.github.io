@@ -2,6 +2,19 @@
   margin: 32px 0px;
 }
 
+.buttonLike {
+  border: 1px solid black;
+  padding: 4px 8px;
+  border-radius: 8px;
+  gap: 12px;
+  transition-property: background-color;
+  transition-duration: 100ms;
+  transition-timing-function: ease;
+  &:hover {
+    background-color: var(--text-colour1) !important;
+  }
+}
+
 .portfolio {  
   display: flex;
   flex-direction: column;
@@ -96,14 +109,7 @@
           
           a {
             display: flex;
-            align-items: center;
-            border: 1px solid black;
-            padding: 4px 8px;
-            border-radius: 8px;
-            gap: 12px;
-            transition-property: background-color;
-            transition-duration: 100ms;
-            transition-timing-function: ease;
+            align-items: center; 
             
             img {
               width: 24px;
@@ -116,8 +122,6 @@
             }
             
             &:hover {
-              background-color: var(--text-colour1);
-              
               p {
                 color: var(--bg-colour0);
               }
@@ -161,6 +165,37 @@
               font-size: 16px;
             }
           }
+        }
+      }
+    }
+
+    .contactMeForm {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      width: 100%;
+
+      input, textarea {
+        border-radius: 8px;
+        border: 1px solid gray;
+        padding: 16px;
+        font-size: 16px;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      button {
+        padding: 12px;
+        align-self: end;
+        border: 1px solid gray;
+        border-radius: 8px;
+        background-color: transparent;
+        font-size: 16px;
+
+        &:hover {
+          color: var(--bg-colour0);
         }
       }
     }

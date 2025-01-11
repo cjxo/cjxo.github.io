@@ -30,7 +30,7 @@
       background-color: var(--text-colour0);
       transition-property: opacity transform;
       transition-duration: 200ms;
-      transition-timing-funcion: ease;
+      transition-timing-function: ease;
       
       opacity: 1;
       transform: scale(0);

@@ -8,7 +8,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Exo";
   line-height: 1.5;
 
   font-synthesis: none;
@@ -16,7 +16,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  font-family: "Exo";
   --text-colour0: #000000;
   --text-colour1: #3f3f3f;
   --bg-colour0: #ffffff;
@@ -29,6 +28,10 @@
   --bg-colour1: #726786;*/
   
   background-color: var(--bg-colour0);
+}
+
+input, textarea, button {
+  font-family: "Exo";
 }
 
 #root {

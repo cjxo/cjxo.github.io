@@ -29,6 +29,12 @@ const Topbar = () => {
             Resume
           </Link>
         </li>
+
+        <li>
+          <a href="#contact-me">
+            Contact Me
+          </a>
+        </li>
       </ul>
     </header>
   );

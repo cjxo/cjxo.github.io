@@ -9,6 +9,7 @@ const ProjectLink = ({ href, name }) => {
       href={href}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      className={styles.buttonLike}
     >
       <p>{name}</p>
       <img
@@ -163,6 +164,17 @@ const Portfolio = () => {
         <p>
           Currently, I'm looking for opportunities to grow as a developer and contribute to projects.
         </p>
+      </section>
+
+      <section className={styles.category} id="contact-me">
+        <h2 className={styles.title}>Contact Me</h2>
+        <form className={styles.contactMeForm}>
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="email" name="email" placeholder="Your Email" required />
+          <input type="text" name="subject" placeholder="Subject" required />
+          <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+          <button className={styles.buttonLike}>Submit Message</button>
+        </form>
       </section>
     </section>
   );
