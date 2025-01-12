@@ -4,6 +4,8 @@ import "./styles/index.css";
 
 import App from './App.jsx';
 import Portfolio from './routes/Portfolio';
+import Blog from './routes/Blog';
+import Resume from './routes/Blog';
 
 import {
   createBrowserRouter,
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Portfolio />,
+      },
+      {
+        path: "/blog",
+        element: <Blog />
+      },
+      {
+        path: "/resume",
+        element: <Resume />
       }
     ]
   }
