@@ -273,3 +273,9 @@
     }
   }
 }
+
+.bottomBar {
+  text-align: center;
+  color: var(--text-colour1);
+  font-size: 18px;
+}
