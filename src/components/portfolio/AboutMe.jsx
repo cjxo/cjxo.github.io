@@ -3,7 +3,7 @@ import { MyLink } from "../Common";
 
 const AboutMe = () => {
   return (
-    <section className={styles.category}>
+    <section className={`${styles.category} ${styles.aboutMe}`}>
       <h2 className={styles.title}>About Me</h2>
       <p>
         My interest in computer programming began when I was around 18 (or 19) years old.
