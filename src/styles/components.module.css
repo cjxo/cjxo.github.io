@@ -198,12 +198,14 @@
     
     p {
       font-size: 16px;
+      flex-grow: 1;
     }
     
     .links {
       margin-top: 8px;
       display: flex;
       gap: 8px;
+      flex-wrap: wrap;
       
       a {
         display: flex;
