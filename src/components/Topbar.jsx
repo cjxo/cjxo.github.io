@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { MyLink } from "./Common";
 import compStyles from "../styles/components.module.css";
 
 const Topbar = () => {
@@ -25,9 +26,9 @@ const Topbar = () => {
         </li>
 
         <li>
-          <Link to="resume">
+          <MyLink href="https://flowcv.com/resume/swmqout1nq">
             Resume
-          </Link>
+          </MyLink>
         </li>
 
         <li>
