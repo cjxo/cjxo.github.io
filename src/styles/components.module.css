@@ -105,7 +105,7 @@
   width: 100%;
   
 /*    background-color: var(--bg-colour1);*/
-  padding: 16px 32px;
+  padding: 16px;
   border-radius: 16px;
   
   display: flex;
@@ -178,7 +178,7 @@
 .projectGrid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 16px;
   
   li {
@@ -200,16 +200,17 @@
       font-size: 16px;
       flex-grow: 1;
     }
-    
+   
     .links {
       margin-top: 8px;
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
-      
+      justify-content: center;
+
       a {
         display: flex;
-        align-items: center; 
+        align-items: center;
         
         img {
           width: 24px;
@@ -231,7 +232,7 @@
   }
   
   @media (min-width: 768px) {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     
     li {
       h4 {

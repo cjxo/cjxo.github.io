@@ -38,34 +38,57 @@ const LiveLink = ({ href }) => {
     </MyLink>
   );
 };
+
+const ProjectCard = ({ title, description, clientHref, serverHref, liveLinkHref }) => {
+  return (
+    <li>
+      <h4>{title}</h4>
+      <p>{description}</p>
+      
+      <div className={styles.links}>
+        <ProjectLink href={clientHref} name="Client" />
+        <ProjectLink href={serverHref} name="API" />
+        
+        {liveLinkHref && <LiveLink href={liveLinkHref} />}
+      </div>
+    </li>
+  );
+};
+
 const Projects = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Social App",
+      description: "An Instagram clone made with React for the frontend and Express for the backend",
+      clientHref: "https://github.com/cjxo/social-app-client",
+      serverHref: "https://github.com/cjxo/social-app-server",
+    },
+    {
+      id: 2,
+      title: "Real Time Chat App",
+      description: "A real time chat app that uses React for the frontend and Express and SocketIO for the backend.",
+      clientHref: "https://github.com/cjxo/real-time-chat-client",
+      serverHref: "https://github.com/cjxo/real-time-chat-server",
+      liveLinkHref: "https://real-time-chat-fullstack.onrender.com/sign-in",
+    },
+    {
+      id: 3,
+      title: "Inventory App",
+      description: "LootBox is an inventory app that uses React for the frontend and Express for the backend.",
+      clientHref: "https://github.com/cjxo/inventory-app-client",
+      serverHref: "https://github.com/cjxo/inventory-app-server",
+      liveLinkHref: "https://inventory-app-fullstack.onrender.com/",
+    },
+  ];
   return (
     <section className={`${styles.category}`}>
       <h3 className={styles.title}>Projects</h3>
       
       <ul className={styles.projectGrid}>
-        <li>
-          <h4>Social App</h4>
-          
-          <p>An Instagram clone made with React for the frontend and Express for the backend</p>
-          
-          <div className={styles.links}>
-            <ProjectLink href="https://github.com/cjxo/social-app-client" name="Client"/>
-            <ProjectLink href="https://github.com/cjxo/social-app-server" name="API"/>
-          </div>
-        </li>
-        
-        <li>
-          <h4>Real Time Chat App</h4>
-          
-          <p>A real time chat app that uses React for the frontend and Express and SocketIO for the backend.</p>
-          
-          <div className={styles.links}>
-            <ProjectLink href="https://github.com/cjxo/real-time-chat-client" name="Client"/>
-            <ProjectLink href="https://github.com/cjxo/real-time-chat-server" name="API"/>
-            <LiveLink href="https://real-time-chat-fullstack.onrender.com/sign-in" />
-          </div>
-        </li>
+        {projects.map(({ id, title, description, clientHref, serverHref, liveLinkHref }) => (
+          <ProjectCard key={id} title={title} description={description} clientHref={clientHref} serverHref={serverHref} liveLinkHref={liveLinkHref} />
+        ))}
       </ul>
     </section>
   );
@@ -81,4 +104,12 @@ ProjectLink.propTypes = {
 
 LiveLink.propTypes = {
   href: PropTypes.string.isRequired,
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  clientHref: PropTypes.string.isRequired,
+  serverHref: PropTypes.string.isRequired,
+  liveLinkHref: PropTypes.string,
 };
