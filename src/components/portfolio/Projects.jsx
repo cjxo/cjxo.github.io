@@ -57,13 +57,14 @@ const ProjectCard = ({ title, description, clientHref, serverHref, liveLinkHref 
 
 const Projects = () => {
   const projects = [
+  /*
     {
       id: 1,
       title: "Social App",
       description: "An Instagram clone made with React for the frontend and Express for the backend",
       clientHref: "https://github.com/cjxo/social-app-client",
       serverHref: "https://github.com/cjxo/social-app-server",
-    },
+    },*/
     {
       id: 2,
       title: "Real Time Chat App",

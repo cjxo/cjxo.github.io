@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Exo";
-  src: url("./font/Exo_2/Exo2-VariableFont_wght.ttf"),
+  src: url("./font/Exo_2/Exo2-VariableFont_wght.ttf");
 }
 
 :root {
