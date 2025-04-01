@@ -47,8 +47,7 @@ const ProjectCard = ({ title, description, clientHref, serverHref, liveLinkHref 
       
       <div className={styles.links}>
         <ProjectLink href={clientHref} name="Client" />
-        <ProjectLink href={serverHref} name="API" />
-        
+        {serverHref && <ProjectLink href={serverHref} name="API" />}
         {liveLinkHref && <LiveLink href={liveLinkHref} />}
       </div>
     </li>
@@ -66,7 +65,7 @@ const Projects = () => {
       serverHref: "https://github.com/cjxo/social-app-server",
     },*/
     {
-      id: 2,
+      id: 1,
       title: "Real Time Chat App",
       description: "A real time chat app that uses React for the frontend and Express and SocketIO for the backend.",
       clientHref: "https://github.com/cjxo/real-time-chat-client",
@@ -74,12 +73,18 @@ const Projects = () => {
       liveLinkHref: "https://real-time-chat-fullstack.onrender.com/sign-in",
     },
     {
-      id: 3,
+      id: 2,
       title: "Inventory App",
       description: "LootBox is an inventory app that uses React for the frontend and Express for the backend.",
       clientHref: "https://github.com/cjxo/inventory-app-client",
       serverHref: "https://github.com/cjxo/inventory-app-server",
       liveLinkHref: "https://inventory-app-fullstack.onrender.com/",
+    },
+    {
+      id: 3,
+      title: "Resume Builder Client",
+      description: "A simple front-end only resume builder with HTML, CSS, and React.",
+      clientHref: "https://github.com/cjxo/resume-builder-client",
     },
   ];
   return (
@@ -111,6 +116,6 @@ ProjectCard.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string.isRequired,
   clientHref: PropTypes.string.isRequired,
-  serverHref: PropTypes.string.isRequired,
+  serverHref: PropTypes.string,
   liveLinkHref: PropTypes.string,
 };
