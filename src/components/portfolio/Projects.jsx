@@ -85,6 +85,7 @@ const Projects = () => {
       title: "Resume Builder Client",
       description: "A simple front-end only resume builder with HTML, CSS, and React.",
       clientHref: "https://github.com/cjxo/resume-builder-client",
+      liveLinkHref: "https://resume-builder-client.netlify.app/",
     },
   ];
   return (
