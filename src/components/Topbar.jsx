@@ -26,7 +26,7 @@ const Topbar = () => {
         </li>
 
         <li>
-          <MyLink href="https://flowcv.com/resume/swmqout1nq">
+          <MyLink href="https://google.com">
             Resume
           </MyLink>
         </li>
